@@ -8,25 +8,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div class="container fon">
-        <div class="card">
-            <div class="card-panel grey lighten-3">
-                <p><strong>Tiempo: </strong> <span id="timer">0</span> segundos</p>
-                <p><strong>Movimientos: </strong><span id="movements-game">0</span></h2>
-            </div>
-            <div class="card-body">
-                <h2>Drag and Drop</h2>
-                    <p>Drag the image back and forth between the two div elements.</p>
+<body">
 
-                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <img src="./assets/baraja/carta descanso.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88">
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-panel grey lighten-3">
+                    <p><strong>Tiempo: </strong> <span id="timer">0</span> segundos</p>
+                    <p><strong>Movimientos: </strong><span id="movements-game">0</span></h2>
+                        <h2>Solitario</h2>
+                        <p>Recuerda que el orden de las cartas debe ser alternado.</p>
                     </div>
-
-                    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
+                    <div >
+                        <div class="card-body">
+                        <div class="col-8 col-sm-7 col-md-8" id="div1"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img src="./assets/baraja/carta descanso.png" draggable="true" ondragstart="drag(event)" id="drag1" width="110">
+                        </div>
+                            <div class="col-3 col-sm-3 col-xs-3" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>    
+                        </div>
+                    </div>
+                
+                </div>
             </div>
         </div>
+        
+        <div class="row">
+                    <div class="col-3"><div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></div>
+                    <div class="col-3"><div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></div>
+                    <div class="col-3"><div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></div>
+                    <div class="col-3"><div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></div>
+        </div>
+        
     </div>
 </body>
 
